@@ -1,0 +1,95 @@
+// New to Stylus? Check out http://learnboost.github.io/stylus
+// Use modern CSS thanks to Autoprefixer: https://github.com/ai/autoprefixer
+
+// Import CSS from "node_modules" and "bower_components"
+// thanks to Stylus' "import css" and "paths" options
+
+@import 'prism/themes/prism-twilight.css'
+// Check out "bower_components/prism/themes/" for available themes
+
+body
+  background-color #111
+  background-image repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px)
+  font-family sans-serif "Source Code Pro"
+
+.left
+  float left
+
+.right
+  float right
+
+.half
+  width 50%
+
+.bespoke-slide
+  background-color #333
+  color #EEE
+
+h3,h4,h5
+  color #CCC
+
+pre[class*="language-"]
+  overflow hidden
+  overflow-y auto
+
+p
+  margin 1em 0px 1em
+  line-height 1.4em
+
+.bespoke-slide {
+  background: rgba(75,111,47,1);
+  background: linear-gradient(to bottom, rgba(75,111,47,1) 0%, rgba(30,52,24,1) 100%);
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  width: 100%;
+  padding: 0 1em;
+}
+
+section div {
+  width: 640px;
+}
+
+li {
+  padding: 0em 1em;
+}
+img {
+  margin: 0em 1em;
+}
+pre.small {
+  font-size: 0.8em
+}
+h1 {
+text-shadow : rgba(18, 11, 154, 0.25) 1px 1px 1px;
+}
+h2 {
+text-shadow : rgba(30, 60, 20, 0.25) 1px 1px;
+}
+
+h1 { line-height: 0.7em;
+font-size: 2.4em;
+height: 1.2em;}pq
+
+h2 { font-size: 1.8em; height: 2em;}
+h3 { font-size: 1.4em; height: 2.5em; }
+h3 { font-size: 1.2em; }
+h4 { font-size: 1.1em; }
+h5 {
+  font-size:1.0em;
+}
+h4,h5 {
+  color: #ccc;
+  text-shadow : rgba(18, 11, 154, 0.25) 1px 1px;
+  text-align : left;
+  padding-left:2em;
+}
+
+p {
+  font-size: 0.8em;
+  text-align: left;
+  padding-left: 3em;
+  padding-right: 3em;
+}

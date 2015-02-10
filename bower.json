@@ -1,0 +1,7 @@
+{
+  "name": "presentation-introduction-to-node",
+  "version": "0.0.0",
+  "dependencies": {
+    "prism": "gh-pages"
+  }
+}

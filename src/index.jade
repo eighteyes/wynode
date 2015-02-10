@@ -1,0 +1,431 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Introduction To Node
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      section
+        img(src='images/node-logo.svg' width='60%')
+        h1 Introduction To Node
+
+        ul
+          li
+          li
+            h3 Presented By Wyncode
+          li
+            div
+              span.left
+                img(src='images/me.png' width='33%')
+              p
+                p Sean Canton <br> @seancanton
+                p sean.e.canton@gmail.com <br> sean@rokk3rlabs.com
+
+      section
+        ul
+          li
+            pre
+              code.language-javascript.
+                // not for noobs
+                this.Class = _.map( function(u){
+                  return ( isN00b(u) === false );
+                });
+          li
+            b Warning :
+            span -> Mind Bending Geekery Ahead
+
+          li
+            h3
+              Cheap shots at your favorite tools will be made
+
+          li
+            h3 ( get out while you still can )
+
+      section
+        h1 ReadMe
+        ul
+          li
+            span.right
+              img(src='images/me.png' width='50%')
+            p Moved to Miami from California in 2014
+            p Wyncode + Me = BFF's
+            p I work with rokk3r labs to cobuild companies
+          li
+            p Node from v0.4. JavaScript from 1998.
+            p ( You kids are spoiled )
+            p Education: Journalism &amp; Geography
+          li
+            p Kicked out of CS class for hacking with teachers approval
+            p Worked on 8 startups, vast majority for some equity.
+            p Hasn't cashed out a dime.
+
+      section
+        h1 Readme
+        ul
+          li
+            h3 Industries Experienced
+          li
+            p Education / OSHA Safety Training
+            p Tutoring and Mentorship
+            p Political ( No one you've ever heard of, Libertarian )
+          li
+            p E-Commerce ( Social Shopping :)
+            p Commercial Real Estate
+            p Music Licensing
+          li
+            p Social Entrepeneurship
+            p Internet of Things / Home Automation
+
+
+      section
+        h3 I've achieved an intermediate understanding of:
+        h3 PHP
+        h3 Ruby / Rails
+        h3 Python / Django
+        ul
+          li
+          li
+            h3 Node is my favorite way to develop web applications.
+
+      section
+        ul
+          li
+            h1 Why Node?
+          li
+            h4 What is this sorcery?
+            p.half.right
+              img(src='images/gandalf.jpeg' width='75%')
+            p Node is a powerful, flexible approach towards web application building that favors modular connections and event driven workflow over centrally organized Object Oriented Programming.
+          li
+            p The central paradigm shift for most programmers is shifting patterns of problem solving from procedural programming, with I/O blocking controlling execution flow, to functional programming with asynchronous calls and non-blocking operations.
+            p Will explain more later.
+      section
+        ul
+          li
+            h1 Why Node?
+          li
+
+            img(src='images/ring.jpg' width='50%')
+            h3.right Discards One Object to Rule Them All
+          li
+            h3.right Favors asynchronicity and event handlers.
+      section
+        ul
+          li
+            p Core of file and http handlers form a bridge that connects your OS at the system level to the internet, the complexity of which is extremely robust and lightweight, when compared to the cumbersome complexity of working through layers of GUI OS APIs (Apple, Microsoft, Linux).
+          li
+            p.right
+              img(src='images/hexgrid.png' width='100%')
+            p Permits a loosely coupled application, tied together by a global event stream. There is no need for information silos, but nothing to stop you from applying OOP, where useful.
+
+
+      section
+        ul
+          li
+            h1 Why Node?
+            h3 Sounds complex....
+          li
+            h4 Complexity must be handled intelligently,
+            h4 with great abandon, tempered by foresight.
+          li
+            p Node = 1.8m - v8 ( 1.27 m ) = 530k
+            p php 2.48m
+            p python 954k + django 404k
+            p ruby 988k + rails 205k
+            p JOnAS (Java Open Application Server) 9.88M
+            p NUnit .Net unit testing framework ( 1.06m )
+
+          li
+            p Frameworks specialize in data workflows at the cost of flexibility.
+
+
+      section
+        ul
+          li
+            h1 Why Node?
+          li
+            h4 This Course
+            p We are proposing to teach you how to use Node to build web applications in 6 weeks.
+            p This is not a full-time, on-site committment like Wyncode, it will consist of one weekday night and one weekend session until the course is concluded.
+            p Content includes lectures, live demonstrations, and self-driven coding exercises.
+            p Help from Fellow Students, Instructor and Assistant Teachers.
+          li
+            h4 Objective
+            p Start using Node for your next project.
+
+      section
+        h1 Node Overview
+        ul
+          li
+            p Node.js interprets JavaScript in a serverside environment using Google's V8 Engine.
+          li
+            p Instead of having a server (like Apache, ngnix, or Sinatra), that executes Ruby, Python or PHP scripts, Node is the both server and the script.
+            p Entire server lives in a single process of active memory.
+          li
+            p External systems, such as database calls and service requests, are handled asynchronously, meaning the rest of the script continues and the response is handled when it comes.
+          li
+            p This approach favors high-concurrency, real-time applications as well as light-weight, modular, single task services.
+          li
+            p Weakest point of node is in data processing. JS does not performantly handle data as well as Scala, Python or Ruby.
+
+
+      section
+        h2 What can you do with Node.js?
+        ul
+          li
+            p Corporate Use - Groupon, SAP, LinkedIn, Microsoft, Yahoo!, Walmart, Rakuten and PayPal.
+          li
+            p Startups - 885 startups looking for Node talent angel.co/node-js/jobs
+          li
+            p Mobile Applications - Node can be encapsulated within an iOS or Android environment
+          li
+            p Desktop Applications - Webkit driven. appjs.com
+          li
+            p Robotics - NodeBots let you control Ardunio
+          li
+            p Embedded Applications - lightweight Linux servers
+          li
+            p Operating System - node-os.com (wut)
+          li
+            h3 What <b>can't</b> you do with Node.
+
+      section
+        ul
+          li
+            h1 What is Node?
+          li
+            h2 Lightweight Core
+          li
+            h2 Module Ecosystem
+
+      section
+        h2 Lightweight Core
+        ul
+          li Core Node.js has a specialized set of methods and event listeners to handle http requests.
+          li This is a simple node server
+          li
+            pre
+              code.language-javascript.
+                var http = require('http');
+                http.createServer(function (req, res) {
+                  res.writeHead(200, {'Content-Type': 'text/plain'});
+                  res.end('Hello World\n');
+                }).listen(1337, '127.0.0.1');
+          li We'll break this down later
+
+      section
+        h2 Module Ecosystem
+        ul
+          li
+            h3 Community is everything.
+          li
+            img(src='images/jresig.jpg' class='left' width='33%')
+            h4 John Resig
+            p Made JavaScript usable by normal people in 2006 with jQuery.
+            p Standardized execution across browser implementations.
+            p Intuitive API introduced many to advanced JS constructions, chaining, event handlers, & functional programming.
+
+          li
+            img(src='images/Ryan_Dahl.jpg' class='right' width='20%')
+            h4 Ryan Dahl
+            p Made Node.js in 2009, sponsored by Joyent
+
+      section
+        ul
+          li
+            img(src='images/issacs.jpg' class='right' width='33%')
+            h4 Issac Schlueter
+            p Made npm in 2001, as of Feb 8 124k modules uploaded.
+            p npm is the cornerstone of the node community
+
+          li
+            img(src='images/caolan.png' class='left' width='33%')
+            h4 Caolan McMahon
+            p Made the very useful async and highland modules
+
+      section
+        h1 What is a module?
+        p A node module is published online, just like ruby gems. Modules are stored in the node_modules folder as JavaScript
+        pre.small
+          code.language-javascript.
+            var foo = { obj : true }
+            module.exports = foo;
+        p Accessing this module via Node uses require().
+        pre.small
+          code.language-javascript.
+            // example of module
+            var bar = require('some-module-name');
+            console.log(bar);
+            // bar = { obj : true }
+
+      section
+        ul
+          li
+            pre
+              code.language-javascript.
+                var http = require('http');
+            p 'http' is a core module. require() is used to include core and node modules in applications.
+          li
+            pre
+              code.language-javascript.
+                http.createServer(function (req, res) { ... )});
+            p call the createServer method of the http module. pass this method a function as a parameter.
+          li Wait. what?
+
+      section
+        h3 programming paradigms
+        ul
+          li
+            h4 Procedural Programming
+            p Items are evalualuated purely in a series.
+            pre
+              code.language-javascript.
+                var a = 2
+                var b = a + 2
+          li Object Oriented
+            p Abstracts information into structures and make it easier for humans to work with.
+            pre
+              code.language-javascript.
+                Car.wheels = 4
+
+      section
+        h3 programming paradigms
+        ul
+          li
+            h4 Functional Programming
+            p Ever used Reverse Polish Notation on a calculator? 2, 2, +
+            p or LISP (+ 2 2)
+            p This regards the operation you wish to use as a distinct function.
+            p Functions are first class, meaning they can be passed as parameters, just like objects.
+          li Javascript is both a procedural and a functional language.
+
+          link('http://en.wikipedia.org/wiki/First-class_function')
+
+      section
+        h3 callbacks. anonymous functions. asynchronicity.
+        ul
+          li Synchronous psuedo-script example
+            pre
+              code.language-javascript.
+                user = User.find(id);
+                order = Order.find(user);
+                address = order.address;
+          li This will <b>NOT</b> work in Node.
+          li Line 2 executes before User is defined.
+
+      section
+        h3 callbacks. anonymous functions. asynchronicity.
+        ul
+          li Node handles asynchronicity by using callbacks.
+          li
+            pre
+              code.language-javascript.
+                User.find(id, function(err, user){
+                  Order.find({ user: user.id }, function(err, order){
+                    address = order.address
+                  })
+                })
+          li Yes, those are functions being passed as parameters.
+          li Briefly commit the above to memory.
+
+      section
+        h3 callbacks. anonymous functions. asynchronicity.
+        pre.small
+          code.language-javascript.
+            var userHandler = function(err, user){
+              Order.find( {user: user.id}, orderHandler);
+            });
+            var orderHandler = function(err, order){
+              address = order.address;
+            });
+            User.find(id, userHandler);
+
+        ul
+          li
+            p Modularity is favored, common functions are abstracted easily
+          li
+            p Be careful, as nested callbacks and branches become complex.
+          li
+            p Tools and techniques for managing 'callback hell'.
+
+      section
+        h1 Error Handling
+        p A standard approach to asynchronous calls in node is
+        pre.small
+          code.language-javascript.
+            // assume cb is available
+            User.find(id, function(err, response){
+              if (err) { return cb(err); }
+              return cb(null, response);
+            }
+        p This error first is a standard across Node, so if an asynchronous call errors out, it 'bubbles' to the top of the execution stack and painlessly stops future processing.
+
+      section
+        h1 events
+        p Any object which extends the EventEmitter module has access to a global event flow.
+
+        pre.small
+          code.language-javascript.
+            var events = require('events');
+            var foo = new events.EventEmitter();
+
+            foo.on('say:hi', sayHello);
+            foo.emit('say:hi');
+
+            var sayHello = function sayHello(){
+              console.log('hello');
+            }
+
+        p Events system wide, which means any part of your application can talk to any other, without an existing Object or Class abstraction mediating the flow of information.
+
+      section
+        h1 Live Coding
+        p We often need to make one-off servers to achieve a very simple functionality to test out a web prototype.
+        p Node is ideal for this situation.
+
+      section
+        ul
+          li
+            h1 One more thing....
+          li
+            h2 This entire presentation is powered by node.js
+              pre.small
+                code.language-javascript.
+                {"statuses":[{"metadata":{"iso_language_code":"fr","result_type":"recent"},"created_at":"Mon Feb 09 21:33:08 +0000 2015","id":564899827822395400,"id_str":"564899827822395392","text":"@Doope_ tpeux pas test laisses","source":"<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>","truncated":false,"in_reply_to_status_id":564899772453371900,"in_reply_to_status_id_str":"564899772453371906","in_reply_to_user_id":2182684454,"in_reply_to_user_id_str":"2182684454","in_reply_to_screen_name":"Doope_","user":{"id":174790357,"id_str":"174790357","name":"Cheshire Girl","screen_name":"Yael_O_o","location":"âœ¨ Frenchie from Neverland âœ¨","profile_location":null,"description":"a smooth criminal   à½¼ âœï¸","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":898,"friends_count":290,"listed_count":6,"created_at":"Wed Aug 04 20:50:04 +0000 2010","favourites_count":48941,"utc_offset":3600,"time_zone":"Paris","geo_enabled":false,"verified":false,"statuses_count":41587,"lang":"fr","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http://pbs.twimg.com/profile_background_images/439743759094259712/Z42DwVa5.jpeg","profile_background_image_url_https":"https://pbs.twimg.com/profile_background_images/439743759094259712/Z42DwVa5.jpeg","profile_background_tile":false,"profile_image_url":"http://pbs.twimg.com/profile_images/559378431352504320/ceJ4ZeR7_normal.jpeg","profile_image_url_https":"https://pbs.twimg.com/profile_images/559378431352504320/ceJ4ZeR7_normal.jpeg","profile_banner_url":"https://pbs.twimg.com/profile_banners/174790357/1417402162","profile_link_color":"D6BAD3","profile_sidebar_border_color":"000000","profile_sidebar_fill_color":"EFEFEF","profile_text_color":"333333","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"Doope_","name":"KÃ¶ala Spliff","id":2182684454,"id_str":"2182684454","indices":[0,7]}],"urls":[]},"favorited":false,"retweeted":false,"lang":"fr"},{"metadata":{"iso_language_code":"en","result_type":"recent"},"created_at":"Mon Feb 09 21:33:08 +0000 2015","id":564899827654590460,"id_str":"564899827654590464","text":"Good first day at work, great first test of the semester! ðŸ˜Š","source":"<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":501371155,"id_str":"501371155","name":"African Princess â¤ï¸","screen_name":"_MoneyMaggz","location":"on my queen shit ! ","profile_location":null,"description":"West African Princess x Future Lawyer #Mizzou16 P.S I'm MUSLIM :)","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":575,"friends_count":123,"listed_count":1,"created_at":"Fri Feb 24 02:28:30 +0000 2012","favourites_count":2331,"utc_offset":-21600,"time_zone":"Central Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":52811,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"DBE9ED","profile_background_image_url":"http://abs.twimg.com/images/themes/theme17/bg.gif","profile_background_image_url_https":"https://abs.twimg.com/images/themes/theme17/bg.gif","profile_background_tile":false,"profile_image_url":"http://pbs.twimg.com/profile_images/555216507681001472/woebblss_normal.jpeg","profile_image_url_https":"https://pbs.twimg.com/profile_images/555216507681001472/woebblss_normal.jpeg","profile_banner_url":"https://pbs.twimg.com/profile_banners/501371155/1407171348","profile_link_color":"CC3366","profile_sidebar_border_color":
+
+      section
+        ul
+          li
+            h1 Wynode.
+          li
+            h4 Pre-reqs
+            p  Some programming experience
+          li
+            h4 Pre work
+            p Build an AJAX POST form submission and handle the return using HTML / CSS / JS
+            p jQuery optional - will be covered on day 1
+          li
+            h4 Time
+            p Looking to start in early March
+          li
+            h4 Cost
+            p Looking at $1k - $1.5k per student depending on interest level.
+
+
+      section
+
+        h2 Thanks you
+        h3 & thanks to
+
+        h4 Bespoke - Runtime compilation
+        h4 Jade - Templating
+        h4 Stylus - CSS Extension
+
+
+    script(src='build/build.js')
